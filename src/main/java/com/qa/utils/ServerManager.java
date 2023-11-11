@@ -30,7 +30,9 @@ public class ServerManager {
     }
 
     public AppiumDriverLocalService getAppiumServerDefault() {
-        return AppiumDriverLocalService.buildDefaultService();
+        return AppiumDriverLocalService.buildDefaultService();AppiumDriverLocalService.buildService(new AppiumServiceBuilder().usingAnyFreePort()
+			.withAppiumJS(new File("C:\\Users\\VIKRAM KUMAR G\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\appium.js")).withArgument(() -> "--log-level","error")
+			.withCapabilities(capabilities));
     }
 
     public AppiumDriverLocalService WindowsGetAppiumService() {
