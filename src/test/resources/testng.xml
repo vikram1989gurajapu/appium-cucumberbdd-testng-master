@@ -11,14 +11,5 @@
 			<class name="com.qa.runners.MyPixel3TestNGRunnerTest"/>
 		</classes>
 	</test>
-	<test name="Pixel4">
-		<parameter name="platformName" value="Android" />
-		<parameter name="udid" value="emulator-5556" />
-		<parameter name="deviceName" value="Pixel_4" />
-		<parameter name="systemPort" value="10001" />
-		<parameter name="chromeDriverPort" value="11001" />
-		<classes>
-			<class name="com.qa.runners.MyPixel2XLTestNGRunnerTest"/>
-		</classes>
-	</test>
+	
 </suite> <!-- Suite -->
